@@ -14,3 +14,29 @@ input:focus,
 textarea:focus {
   outline: none !important;
 }
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+
+.category-btn {
+  background: rgba(255, 255, 255, 0.76);
+  border-radius: 25px;
+  flex-direction: row;
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  /* padding: 1% 0; */
+  height: 47px;
+  align-items: center;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}

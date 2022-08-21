@@ -10,6 +10,7 @@ import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import MyCart from "./pages/CustomerPage/MyCart/MyCart";
 import MyOrders from "./pages/CustomerPage/MyOrders/MyOrders";
 import SubNavbar from "./components/SubNavbar/SubNavbar";
+import AddReviewPage from "./pages/CustomerPage/AddReviewPage/AddReviewPage";
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/cart" element={<MyCart />} />
           <Route path="/orders" element={<MyOrders />} />
+          <Route path="/orders/addreview" element={<AddReviewPage />} />
         </Routes>
       </div>
     </Router>

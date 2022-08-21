@@ -56,8 +56,7 @@ const Sidebar = () => {
                 route.pathname.match(/shop/) !== null
                   ? selectTxtStyle
                   : defaultTxtStyle
-              }
-            >
+              }>
               Shops
             </span>
           </div>
@@ -77,8 +76,7 @@ const Sidebar = () => {
                 route.pathname.match(/event/) !== null
                   ? selectTxtStyle
                   : defaultTxtStyle
-              }
-            >
+              }>
               Events
             </span>
           </div>
@@ -99,8 +97,7 @@ const Sidebar = () => {
                 route.pathname.match(/profile/) !== null
                   ? selectTxtStyle
                   : defaultTxtStyle
-              }
-            >
+              }>
               My Profile
             </span>
           </div>
@@ -120,8 +117,7 @@ const Sidebar = () => {
                 route.pathname.match(/cart/) !== null
                   ? selectTxtStyle
                   : defaultTxtStyle
-              }
-            >
+              }>
               My Cart
             </span>
           </div>
@@ -141,8 +137,7 @@ const Sidebar = () => {
                 route.pathname.match(/orders/) !== null
                   ? selectTxtStyle
                   : defaultTxtStyle
-              }
-            >
+              }>
               My Orders
             </span>
           </div>
