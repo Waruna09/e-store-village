@@ -1,0 +1,23 @@
+.top-event-row-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1% 1.5%;
+  margin-top: 1.5%;
+}
+
+.top-event-img-container {
+  width: 20%;
+  object-fit: contain;
+}
+.top-event-para {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 1%;
+}

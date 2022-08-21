@@ -1,0 +1,47 @@
+.myorders-main-container {
+  margin-top: 2%;
+  padding: 2%;
+  width: 100%;
+}
+.orders-table {
+  width: 100%;
+  border-spacing: 0;
+}
+.orders-table-header {
+  width: 100%;
+  background-color: #d9d9d9;
+}
+.orders-table-header > th {
+  padding: 1.5% 0;
+  /* border-start-end-radius: 18px; */
+}
+.order-item-size {
+  width: 20%;
+}
+
+.order-detail-txt {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.dark-green {
+  color: #0f4506;
+}
+
+.light-green {
+  color: #1a760b;
+}
+
+.order-shop-name {
+  width: 31%;
+  font-size: 18px;
+  padding: 2% 0;
+}
+
+.order-row-container {
+  background-color: white;
+}
+
+.order-row-container > td {
+  margin-top: 6%;
+}

@@ -1,0 +1,20 @@
+.event-sub-container {
+  padding: 40px;
+}
+.event-offer-container {
+  padding: 1%;
+}
+
+.event-offer-sub-container {
+  padding: 1%;
+  background-color: #d3d0d0;
+}
+.event-title {
+  margin-bottom: 2%;
+}
+.event-offer-product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+}
