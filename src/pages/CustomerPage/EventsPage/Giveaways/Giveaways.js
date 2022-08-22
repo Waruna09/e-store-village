@@ -18,7 +18,23 @@ const Giveaways = () => {
           ullamcorper sollicitudin ut in dolor. Nunc tempus urna sit amet porta
           consequat. Nunc vitae lectus felis.
         </p>
-        <span className="giveaway-end-date">Ends on - DD/MM/YYYY </span>
+
+        <div className="giveawary-update-row-container">
+          <div>
+            <button
+              style={{ backgroundColor: "#FBBC05" }}
+              className="give-away-btns">
+              Update
+            </button>
+            <button
+              style={{ backgroundColor: "#F4685D" }}
+              className="give-away-btns">
+              Remove
+            </button>
+          </div>
+
+          <span className="giveaway-end-date">Ends on - DD/MM/YYYY </span>
+        </div>
       </div>
 
       <img src={GiveAway} alt="" className="giveaway-type" />

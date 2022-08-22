@@ -18,3 +18,17 @@
   justify-content: center;
   gap: 60px;
 }
+
+.event-give-away-row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-give-away-btn {
+  background-color: #ffc029;
+  border-radius: 18px;
+  padding: 1% 3%;
+  font-weight: bold;
+}

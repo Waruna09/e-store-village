@@ -11,6 +11,10 @@ import MyCart from "./pages/CustomerPage/MyCart/MyCart";
 import MyOrders from "./pages/CustomerPage/MyOrders/MyOrders";
 import SubNavbar from "./components/SubNavbar/SubNavbar";
 import AddReviewPage from "./pages/CustomerPage/AddReviewPage/AddReviewPage";
+import MyShop from "./pages/SellerPages/MyShop/MyShop";
+import DiscountPage from "./pages/SellerPages/DiscountPage/DiscountPage";
+import ShopProfile from "./pages/SellerPages/ShopProfile/ShopProfile";
+import SalesHistory from "./pages/SellerPages/SalesHistory/SalesHistory";
 function App() {
   return (
     <Router>
@@ -19,6 +23,7 @@ function App() {
       <div style={{ flexDirection: "row", display: "flex" }}>
         <Sidebar />
         <Routes>
+          {/* customer pages */}
           <Route exact path="/" element={<CustomerPage />} />
           <Route path="/product" element={<LandingPage />} />
           <Route path="/shop" element={<ShopPage />} />
@@ -27,6 +32,12 @@ function App() {
           <Route path="/cart" element={<MyCart />} />
           <Route path="/orders" element={<MyOrders />} />
           <Route path="/orders/addreview" element={<AddReviewPage />} />
+
+          {/* seller pages */}
+          <Route path="/myshop" element={<MyShop />} />
+          <Route path="/discounts" element={<DiscountPage />} />
+          <Route path="/shopProfile" element={<ShopProfile />} />
+          <Route path="/salesHistory" element={<SalesHistory />} />
         </Routes>
       </div>
     </Router>

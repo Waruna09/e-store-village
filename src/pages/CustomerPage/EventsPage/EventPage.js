@@ -17,7 +17,8 @@ const EventPage = () => {
         <div className="category-container">
           <div></div>
           <button className="category-btn">
-            <p className="category-txt">Category</p> <RiArrowDropDownLine size={30}/>
+            <p className="category-txt">Category</p>{" "}
+            <RiArrowDropDownLine size={30} />
           </button>
         </div>
         <div className="event-offer-sub-container">
@@ -32,7 +33,10 @@ const EventPage = () => {
       </div>
 
       <div className="event-sub-container">
-        <h3 className="event-title">Giveaways</h3>
+        <div className="event-give-away-row-container">
+          <h3 className="event-title">Giveaways</h3>
+          <button className="add-give-away-btn">Add A Giveaway</button>
+        </div>
 
         {giveawaylist.map((item, index) => (
           <Giveaways key={index} />

@@ -14,7 +14,7 @@ const SubNavbar = () => {
   const setHeader = () => {
     if (router.pathname.match(/order/)) {
       return "My Orders";
-    } else if (router.pathname.match(/shop/)) {
+    } else if (router.pathname === "/shop") {
       return "Shops";
     } else if (router.pathname.match(/event/)) {
       return "Events";
@@ -22,6 +22,14 @@ const SubNavbar = () => {
       return "My Cart";
     } else if (router.pathname.match(/profile/)) {
       return "My Profile";
+    } else if (router.pathname.match(/shopProfile/)) {
+      return "Shop Profile";
+    } else if (router.pathname.match(/salesHistory/)) {
+      return "Sales History";
+    } else if (router.pathname === "/myshop") {
+      return "My Shop";
+    } else if (router.pathname === "/discounts") {
+      return "Discounts";
     } else if (router.pathname === "/") {
       return "Product";
     }

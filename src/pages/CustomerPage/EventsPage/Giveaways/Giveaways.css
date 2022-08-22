@@ -17,6 +17,26 @@
   flex-direction: column;
 }
 
+.giveawary-update-row-container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.giveawary-update-row-container > div {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.give-away-btns {
+  padding: 10% 20%;
+  border-radius: 20px;
+  font-weight: bold;
+}
 .give-away {
   width: 100%;
   margin-top: 14%;
@@ -39,9 +59,6 @@
 }
 
 .giveaway-end-date {
-  position: absolute;
-  bottom: 19%;
-  right: 22%;
   font-family: "Poppins";
   font-weight: 300;
   font-size: 18px;

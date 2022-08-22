@@ -7,6 +7,7 @@ import {
   AiOutlineUser,
   AiFillShop,
 } from "react-icons/ai";
+import { BsPencilSquare } from "react-icons/bs";
 import { Link, useParams, useRoutes, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
@@ -32,20 +33,13 @@ const Sidebar = () => {
             <span>Home</span>
           </div>
         </Link>
-        <Link to="/">
-          <div className="row-container">
-            <FiTag size={25} />
-            <span>Products</span>
-          </div>
-        </Link>
-
-        <Link to="/shop">
+        <Link to="/myshop">
           <div className="row-container">
             <div className="icon-container">
-              <AiFillShop
+              <FiHome
                 size={25}
                 color={
-                  route.pathname.match(/shop/) !== null
+                  route.pathname === "/myshop"
                     ? iconSelectColor
                     : iconDefaultColor
                 }
@@ -53,9 +47,33 @@ const Sidebar = () => {
             </div>
             <span
               style={
-                route.pathname.match(/shop/) !== null
-                  ? selectTxtStyle
-                  : defaultTxtStyle
+                route.pathname === "/myshop" ? selectTxtStyle : defaultTxtStyle
+              }>
+              My Shop
+            </span>
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="row-container">
+            <FiTag size={25} />
+            <span>Products</span>
+          </div>
+        </Link>
+        <Link to="/shop">
+          <div className="row-container">
+            <div className="icon-container">
+              <AiFillShop
+                size={25}
+                color={
+                  route.pathname === "/shop"
+                    ? iconSelectColor
+                    : iconDefaultColor
+                }
+              />
+            </div>
+            <span
+              style={
+                route.pathname === "/shop" ? selectTxtStyle : defaultTxtStyle
               }>
               Shops
             </span>
@@ -81,7 +99,74 @@ const Sidebar = () => {
             </span>
           </div>
         </Link>
+        <Link to="/discounts">
+          <div className="row-container">
+            <p
+              style={{
+                color:
+                  route.pathname.match(/discounts/) !== null
+                    ? iconSelectColor
+                    : iconDefaultColor,
 
+                fontWeight:
+                  route.pathname.match(/discounts/) !== null
+                    ? "bold"
+                    : "normal",
+                fontSize: 25,
+              }}>
+              %
+            </p>
+            <span
+              style={
+                route.pathname.match(/discounts/) !== null
+                  ? selectTxtStyle
+                  : defaultTxtStyle
+              }>
+              Discounts
+            </span>
+          </div>
+        </Link>
+
+        <Link to="/salesHistory">
+          <div className="row-container">
+            <BsPencilSquare
+              size={25}
+              color={
+                route.pathname.match(/salesHistory/) !== null
+                  ? iconSelectColor
+                  : iconDefaultColor
+              }
+            />
+            <span
+              style={
+                route.pathname.match(/salesHistory/) !== null
+                  ? selectTxtStyle
+                  : defaultTxtStyle
+              }>
+              Sales History
+            </span>
+          </div>
+        </Link>
+        <Link to="/shopProfile">
+          <div className="row-container">
+            <AiOutlineUser
+              size={25}
+              color={
+                route.pathname.match(/shopProfile/) !== null
+                  ? iconSelectColor
+                  : iconDefaultColor
+              }
+            />
+            <span
+              style={
+                route.pathname.match(/shopProfile/) !== null
+                  ? selectTxtStyle
+                  : defaultTxtStyle
+              }>
+              Shop Profile
+            </span>
+          </div>
+        </Link>
         <Link to="/profile">
           <div className="row-container">
             <AiOutlineUser
@@ -147,7 +232,7 @@ const Sidebar = () => {
           <span>Settings</span>
         </div>
       </section>
-      <div style={{ width: "16vw" }}></div>
+      <div style={{ width: "19vw" }}></div>
     </div>
   );
 };
