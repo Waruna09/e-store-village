@@ -53,12 +53,30 @@ const Sidebar = () => {
             </span>
           </div>
         </Link>
-        <Link to="/">
+
+        <Link to="/product">
           <div className="row-container">
-            <FiTag size={25} />
-            <span>Products</span>
+            <div className="icon-container">
+              <FiTag
+                size={25}
+                color={
+                  route.pathname.match(/product/) !== null
+                    ? iconSelectColor
+                    : iconDefaultColor
+                }
+              />
+            </div>
+            <span
+              style={
+                route.pathname.match(/product/) !== null
+                  ? selectTxtStyle
+                  : defaultTxtStyle
+              }>
+              Products
+            </span>
           </div>
         </Link>
+
         <Link to="/shop">
           <div className="row-container">
             <div className="icon-container">

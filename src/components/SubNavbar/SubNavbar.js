@@ -18,6 +18,8 @@ const SubNavbar = () => {
       return "Shops";
     } else if (router.pathname.match(/event/)) {
       return "Events";
+    } else if (router.pathname.match(/product/)) {
+      return "Products";
     } else if (router.pathname.match(/cart/)) {
       return "My Cart";
     } else if (router.pathname.match(/profile/)) {

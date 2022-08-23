@@ -1,24 +1,38 @@
 import React from "react";
 import "./navbar.css";
 import Logo from "../../assests/images/Logo.png";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
+  const router = useLocation();
+
+  let color = "white";
+
+  if (
+    router.pathname.match(/login/) ||
+    router.pathname.match(/createAccount/)
+  ) {
+    color = "#DEE1EF";
+  }
+
   return (
     <div>
-      <nav>
+      <nav style={{ backgroundColor: color }}>
         <div className="logo">
           <img src={Logo} />
         </div>
         <ul>
           <li>
-            <a href="" className="active">
-              Home
-            </a>
+            <Link to={"/"}>
+              <a href="" className={`${router.pathname === "/" && "active"}`}>
+                Home
+              </a>
+            </Link>
           </li>
           <li>
             <a href="">Products</a>
           </li>
           <li>
-            <a href="/shop">Shops</a>
+            <a href="">Shops</a>
           </li>
           <li>
             <a href="">About Us</a>
@@ -27,10 +41,26 @@ const Navbar = () => {
             <a href="">Contact Us</a>
           </li>
           <li>
-            <a href="">Login</a>
+            <Link to={"/login"}>
+              <a
+                href=""
+                className={`${
+                  router.pathname.match(/login/) !== null && "active"
+                }`}>
+                Login
+              </a>
+            </Link>
           </li>
           <li>
-            <a href="">Signup</a>
+            <Link to={"/createAccount"}>
+              <a
+                href=""
+                className={`${
+                  router.pathname.match(/createAccount/) !== null && "active"
+                }`}>
+                Signup
+              </a>
+            </Link>
           </li>
         </ul>
       </nav>
